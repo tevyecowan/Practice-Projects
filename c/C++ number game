@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+int x;
+int d;
+cout << "Please enter any number other than 5." << endl;
+cin >> d;
+try{
+if (!cin >> d) {throw 99;}
+if (d == 5) {throw 55;}
+}
+catch (int y) {cout << "You didn't do what I said! You've caused error " << y <<", you lose! \n" << endl; return 0;}
+for (x=1; x<10;x++){
+cout << "Thanks! Please enter any other number, other than 5." << endl;
+cin >> d;
+try{
+if (!cin >> d) {throw 99;}
+if (d == 5) {throw 55;}
+}
+catch (int y) {cout << "I told you to enter a number! You've caused error " << y << ", you lose! \n" <<endl; return 0;}
+}
+cout << "Wow! you're more patient than I am... You win.\n" << endl; return 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
