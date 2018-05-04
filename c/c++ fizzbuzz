@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    
+    int x;
+    for (x = 1; x <= 100; x++) {
+        
+        if ((x % 3 == 0) & (x % 5 == 0)) { cout << "FizzBuzz!" << endl;}
+        if (x % 3 == 0) { cout << "Fizz!" << endl;}
+        if (x % 5 == 0) { cout << "Buzz!" << endl;}
+        if ((x % 3 != 0) & (x % 5 != 0)) {cout << x << endl;}
+    }
+    
+}
