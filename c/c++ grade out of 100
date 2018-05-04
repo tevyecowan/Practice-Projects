@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+int grade;
+cout << "Please enter your score out of 100." << endl;
+cin >> grade;
+
+if (grade == 100) {cout << "Wow! You got a perfect score. A+~" << endl; return 0;}
+if (grade >= 90) {cout << "You got an A~" << endl; return 0;}
+if (grade >= 80) {cout << "You got a B~" << endl; return 0;}
+if (grade >= 70) {cout << "You got a C~" << endl; return 0;}
+if (grade >= 60) {cout << "You got a D~" << endl; return 0;}
+if (grade <=59) {cout << "You got an F~" << endl;return 0;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
