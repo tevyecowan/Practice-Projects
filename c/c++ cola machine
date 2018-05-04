@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+int x;
+int Cocka_Cola = 1;
+int Grape_Soda = 2;
+int Dr_Schlepper = 3;
+int Foot_Beer = 4;
+int Orange_Soda = 5;
+
+cout << "Please enter your selection. \n \n Press 1 for Cocka Cola. \n Press 2 for Grape Soda. \n Press 3 for Dr Schlepper. \n Press 4 for Foot Beer. \n Press 5 for Orange Soda. \n" << endl;
+cin >> x;
+
+try {switch (x){
+case 1:
+    cout << "You've selected Cocka Cola! Good choice." << endl;
+    break;
+case 2:
+    cout << "You've selected Grape Soda! Good choice." << endl;
+    break;
+case 3:
+    cout << "You've selected Dr Schlepper! Good choice." << endl;
+    break;
+case 4:
+    cout << "You've selected Foot Beer! Good choice." << endl;
+    break;
+case 5:
+    cout << "You've selected Orange Soda! Good choice." << endl;
+    break;
+}
+if ((x > 5) || (x <5)){
+throw 99;}
+if (!cin >> x) {
+    throw 88;}
+}
+
+catch (int y) {cout << "Invalid selection - error " << y;}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
