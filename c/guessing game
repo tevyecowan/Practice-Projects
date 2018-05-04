@@ -1,0 +1,48 @@
+
+#include <iostream>
+#include <ctime>
+using namespace std;
+
+
+int main()
+{
+int x;
+int y;
+int num;
+int guess;
+for (x=1;x<=100;x++){
+    srand(time(0));
+    num = 1 + (rand() % 100);
+}
+cout << "Guess a number between 1 and 100. I'll give you 10 tries to get it right." << endl;
+cin >> guess;
+try{if(guess>100){throw 99;}
+if (guess == num) {cout << "Wow! You got it on the first try! Good job! The number was " << num << endl; return 0;}
+if (guess != num){
+for (y=1;y<10;y++){
+    cout << "Wrong...try again." << endl;
+    cin >> guess;
+    try{if(guess == num) {throw num;}}
+catch(int num) {cout << "Wow! You did it! Good job! The number was " << num << "!" << endl; return 0;}
+}
+cout << "You lose! The number was " << num << "." << endl;
+}
+}
+catch(int j) {cout << "I told you to enter a number between 1 and 100! Why didn't you listen? You cause error " << j << endl; return 0;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
