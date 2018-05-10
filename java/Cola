@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Cola {
+	public static void main(String[] args) {
+		int Coke = 1;
+		int Sprite = 2;
+		int Root_Beer = 3;
+		int Dr_Pepper = 4;
+    	System.out.println("Welcome! Please enter your selection \nFor Coke, press 1.\nFor Sprite, press 2.\nFor Root Beer, press 3.\nFor Dr Pepper, press 4.");
+		Scanner scan = new Scanner(System.in);
+	
+		int input = scan.nextInt();
+		
+			if(input =<0){System.out.println("You've entered an invalid number.");}
+		if(input =>5){System.out.println("You've entered an invalid number.");}
+
+		switch (input){
+			case 1:
+			System.out.println("You've chosen Coke!");
+			break;
+			case 2:
+				System.out.println("You've chosen Sprite!");
+				break;
+			case 3:
+				System.out.println("You've chosen Root Beer!");
+				break;
+			case 4:
+				System.out.println("You've chosen Dr Pepper!");
+				break;
+		}
+	
+
+
+	}
+}
